@@ -1,0 +1,11 @@
+<div class="intersection">
+    <div class="horizontal">
+      <app-traffic-light position="top"></app-traffic-light>
+      <app-traffic-light position="bottom"></app-traffic-light>
+    </div>
+    <div class="vertical">
+      <app-traffic-light position="left"></app-traffic-light>
+      <app-traffic-light position="right"></app-traffic-light>
+    </div>
+    <button (click)="triggerEmergency()" [disabled]="emergencyActive">Авария</button>
+  </div>
